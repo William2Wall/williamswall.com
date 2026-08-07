@@ -54,3 +54,85 @@
 .insight-status{margin-top:auto;padding-top:28px;color:var(--brass);font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 nav a[aria-current="page"]{color:var(--brass-soft)}
 @media(max-width:980px){.insight-grid{grid-template-columns:1fr}.insight-card{min-height:auto}.insights-hero-inner,.insights-heading{text-align:left}.insights-hero-inner>p:last-child{margin-left:0}}
+/* ===== Executive Insight Articles ===== */
+
+.insight-link{
+  display:inline-block;
+  margin-top:auto;
+  padding-top:28px;
+  color:var(--navy);
+  font-size:.82rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+.insight-link:hover{
+  color:var(--brass);
+}
+
+.insight-articles{
+  padding:clamp(80px,8vw,130px) clamp(24px,6vw,96px);
+  background:var(--bone);
+}
+
+.insight-article{
+  max-width:900px;
+  margin:0 auto 120px;
+}
+
+.insight-article:last-child{
+  margin-bottom:0;
+}
+
+.insight-article h2{
+  margin-bottom:24px;
+}
+
+.insight-article p{
+  font-size:1.05rem;
+  color:var(--muted);
+  margin:0 0 22px;
+}
+
+.insight-article strong{
+  color:var(--navy);
+}
+
+.insight-article ul{
+  margin:26px 0 34px 22px;
+  padding:0;
+}
+
+.insight-article li{
+  margin-bottom:12px;
+  color:var(--muted);
+  font-size:1.03rem;
+}
+
+.insight-article .eyebrow{
+  margin-bottom:16px;
+}
+
+.insight-article + .insight-article{
+  padding-top:90px;
+  border-top:1px solid var(--line);
+}
+
+@media (max-width:760px){
+
+  .insight-article{
+    margin-bottom:80px;
+  }
+
+  .insight-article + .insight-article{
+    padding-top:70px;
+  }
+
+  .insight-article p,
+  .insight-article li{
+    font-size:1rem;
+  }
+
+}
